@@ -1,0 +1,86 @@
+#ouNousTrouver{
+    margin: 30px auto;
+    
+    article{
+        width: 900px;
+        padding: 40px 30px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        background-color: rgba(186, 62, 37, 0.5);
+        color: var(--blackEarth);
+        border-radius: 10px;
+    }
+
+    .boxText{
+        font-family: Belanosima;
+        text-align: left;
+    
+        h3{
+            text-align: center;
+            font-family: Pangolin;
+            font-size: 32px;
+            margin: 30px 0px;
+        }
+    
+        .important{
+            font-size: 24px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        p, li{
+            text-align: left;
+            margin: 10px 0px;
+        }
+    
+        li{
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        a{
+            color: var(--blackEarth);
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: var(--goldWheat);
+        }
+    }
+
+    .boxContent{
+        font-family: Pangolin;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+
+        h3{
+            font-size: 32px;
+            margin: 30px 0px;
+        }
+
+        iframe{
+            margin: 10px 0px;
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:940px){
+    #ouNousTrouver{
+        width: 80%;
+
+        article{
+            width: 80%;
+        }
+
+        iframe{
+            width : 80%; 
+            height : 300px;
+        }
+    }
+}
