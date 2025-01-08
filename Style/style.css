@@ -59,6 +59,11 @@ header{
     background-color: var(--darkBrick2);
     height: auto;
     width: 100%;
+    
+    /* TODO  Trouver un moyen pour n'activer ce css que quand le scroll a dépassé la position naturelle de la navbar. */ 
+    /* position: fixed;
+    top: 0;
+    z-index: 1030; */
 
     .menu-desktop{
         display: flex;
@@ -100,7 +105,7 @@ header{
                     background-color: var(--darkBrick2);
                     /* background-color: rgba(186, 62, 37, 0.8); */
                     a{
-                        color: var(--blackEarth);
+                        color: var(--flour);
                     }
                     a:hover{
                         color: var(--goldWheat);
@@ -158,83 +163,6 @@ header{
             display: block;
         }
     }
-
-    /* .menu-desktop{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        color: #1F1206;
-        font-size: 1.3em;
-        list-style-type: none;
-        
-        li{
-            display: flex;
-            align-content: center;
-            a{
-                color: var(--blackEarth);
-                text-decoration: none;
-                padding: 20px 10px;
-            }
-        }
-
-        li:hover a{
-            color: var(--goldWheat);
-            transform: scale(1.1);
-        }
-
-        .deroulant{
-            margin: 0, 10px;
-            
-            
-            a{
-                color: var(--blackEarth);
-                text-decoration: none;
-            }
-
-            .sous-menu{
-                display: none;
-                position: absolute;
-                width: auto;
-                flex-direction: column;
-                z-index: 20;
-
-             li:first-child{
-                margin-top: 60px;
-            }
-
-                li{
-                    padding: 0px 10px;
-                    box-shadow: 0px 1px 2px #CCC;
-                    background-color: var(--darkBrick);
-                    height: auto;
-                    width: auto;
-                    display: flex;
-                    align-content: center;
-                    position: relative;
-                    a{
-                        color: var(--blackEarth);
-                        text-decoration: none;
-                        padding: 20px 10px;
-                    }
-                }
-
-                li:hover a{
-                    color: var(--goldWheat);
-                    transform: scale(1.1);
-                    border-bottom: none;
-                    background-color: RGBa(200,200,200,0.1);
-                }
-            }
-
-            .panier{
-                display: none;
-            }
-        }
-
-        .deroulant:hover > .sous-menu{
-            display:flex;
-        }
-    } */
 
     .menu-mobile{
         display: none;

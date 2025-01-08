@@ -12,7 +12,6 @@
         align-items: center;
         text-align: left;
         width: 100%;
-        /* width: 400px; */
         padding: 40px 30px;
         margin: 30px auto;
         font-size: 20px;
@@ -33,7 +32,7 @@
         /* margin-right: 30px; */
         
         form{
-            width: 100%;
+            width: 60%;
 
             div{
                 margin: 10px 0px;
@@ -42,6 +41,10 @@
                 
                 label{
                     margin: 6px 0px;
+                }
+
+                input, textarea{
+                    padding: 4px 4px;
                 }
 
                 input[type="text"], input[type="email"], textarea{
@@ -75,6 +78,7 @@
     }
 
     .info-contact{
+        width: 100%;
         /* margin-left: 30px; */
         text-align: left;
 
