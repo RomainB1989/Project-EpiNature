@@ -14,8 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Sriracha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Liens Js -->
-    <script src="./accueil.js" defer></script>
+
 </head>
 <body>
     <header title="Bannière Header" >
@@ -61,12 +60,12 @@
                             <div class="min-panier">
                                 <p>2</p>
                                 <p>Boule de Campagne</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                             <div class="min-panier">
                                 <p>1</p>
                                 <p>Troué</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                         </li>
                 </ul>
@@ -74,13 +73,13 @@
         </ul>
         
         <ul class="menu-mobile">   <!-- Menu Deroulant en Version Mobile -->
-            <li class="icon-menu" id="icon-account">
+            <li class="icon-menu">
                 <a href="./creation-connection.html">
-                    <img src="../Images/Icon-Account.png" width="auto" height="34px" alt="Icon Compte">
+                    <img src="../Images/Icon-Account.png" width="auto" height="40px" alt="Icon Compte"  id="icon-account">
                 </a>
             </li>
-            <li class="icon-menu" id="icon-burger">
-                <img src="../Images/Icon-Menu-Burger.png" width="auto" height="12px" alt="Icon Menu Burger">
+            <li class="icon-menu">
+                <img src="../Images/Icon-Menu-Burger.png" width="auto" height="40px" alt="Icon Menu Burger" id="icon-burger">
                 <ul class="menu-burger">
                     <li><a href="./presentation.html">Présentation</a></li>
                     <li><a href="./ou-nous-trouver.html">Ou Nous Trouver ?</a></li>
@@ -92,19 +91,19 @@
                     <li><a href="./gazette.html" target="_self">La Gazette du Boulanger</a></li>
                 </ul>
             </li>
-            <li class="icon-menu" id="icon-basket">
-                <img src="../Images/Shopping Basket.png" width="auto" height="40px" alt="Icon Panier">
+            <li class="icon-menu">
+                <img src="../Images/Shopping Basket.png" width="auto" height="40px" alt="Icon Panier" id="icon-basket">
                 <ul class="basket">
                         <li>
                             <div class="min-basket">
                                 <p>2</p>
                                 <p>Boule de Campagne</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                             <div class="min-basket">
                                 <p>1</p>
                                 <p>Troué</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                         </li>
                 </ul>
@@ -116,7 +115,7 @@
     <main id="partenaires">
         <h2>Nos Partenaires</h2>
         <p class="important">A L’ÉpiNature, nous avons développé des relations fortes avec des partenaires que nous vous présentons ici :</p>
-        <div class="article1">
+        <div class="partenaire">
             <article class="boxInfo1">
                 <p class="important">Moulin de Magdelaine</p>
                 <p class="text">C’est l’exploitation de Jean Marc Maysan, agriculteur meunier basé à La Magdelaine-sur-Tarn(4km du Fournir). Il cultive du blé sur environ 34  hectares en utilisant que ses propres semences puis le transforme en utilisant des moulins à meules de pierre. Ce blé de terroir est écrasé entre deux meules puis est filtré par des tamis afin d’obtenir de la T80, T110… Le germe de blé va imprégner de sa substance l’amidon et les fibres du blé et chargera la farine de  minéraux et de gras. La farine sera dite « farine de meule ». A l’ÉpiNature, nous nous en servons pour fabriquer la « Boule Complète ». Pain bien bombé, onctueux et avec une légère acidité qui gagne encore en  arôme après un jour ou deux.</p>
@@ -125,7 +124,7 @@
             <img src="../Images/moulin-magdelaine2-mini.jpg" alt="Photo Moulin de Magdelaine" width="450px" height="363px" class="responsive">
         </div>
         <hr />
-        <div class="article1">
+        <div class="partenaire">
             <img src="../Images/dourdoule2-mini.jpg" alt="Photo Farine moulu de la Dourdoule" width="450px" height="363px" class="responsive">
             <article class="boxInfo2">
                 <p class="important">La Dourdoule</p>
@@ -134,7 +133,7 @@
             </article>
         </div>
         <hr />
-        <div class="article1">
+        <div class="partenaire">
             <article class="boxInfo1">
                 <p class="important">La Joyeuse Pomme</p>
                 <p class="text">C’est notre fournisseur préféré de pommes. Ils sont basés à Puycelsi, ville célèbre pour celles-ci dans le nord-Ouest du Tarn.Cela fait maintenant 4 générations que la famille Peyrous entretiennent leurs magnifiques vergers. A l’ÉpiNature, nous utilisons leurs Pommes pour faire nos Tartes au pommes et certains de nos cakes.</p>
@@ -143,7 +142,7 @@
             <img src="../Images/verger-pommes-mini.jpg" alt="Photo Verger de la Joyeuse Pomme" class="responsive" width="450px" height="287px">
         </div>
         <hr />
-        <div class="article1">
+        <div class="partenaire">
              <img src="../Images/oeufs-poules-mini.jpg" alt="Photo Poule des Oeufs du Midi" class="responsive" width="450px" height="304px">
             <article class="boxInfo2">
                 <p class="important">Œufs du Midi</p>
@@ -152,7 +151,7 @@
             </article>
         </div>
         <hr />
-        <div class="article1">
+        <div class="partenaire">
             <article class="boxInfo1">
                 <p class="important">Les noix de la Montagne Noire</p>
                 <p class="text">C’est une histoire de famille basée à Labrespy, à 4km au sud de Mazamet en plein dans la Montagne Noire au sud du Tarn. Les noix sont excellentes et elles sont  triées manuellement à l’exploitation et ensuite à la boulangerie pour éviter les coques dans les produits. Nous les utilisons pour le fameux pain aux noix, le pain fantaisie sportive et  les cookies.</p>
@@ -176,4 +175,6 @@
                 <img src="../Images/Bouton Facebook.png" title="Facebook" alt="Lien Facebook" width="60px" height="60px"></a>
         </div>
     </footer>
+    <!-- Liens Js -->
+    <script src="../Front-End/accueil.js"></script>
 </body>

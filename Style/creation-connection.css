@@ -29,6 +29,11 @@
         form{
             width: 100%;
             
+            span{
+                display: inline;
+                color: red;
+            }
+
             div{
                 margin: 10px 0px;
                 display: flex;
@@ -42,7 +47,13 @@
                     padding: 4px 4px;
                     width: 100%;
                 }
-        
+                
+                input[type="checkbox"]{
+                    width: 20px;
+                    height: 20px;
+                    margin: auto;
+                }
+
                 input[type="submit"]{
                     align-self: center;
                     width: 250px;
@@ -74,7 +85,7 @@
     }
 }
 
-@media only screen and (min-width:320px) and (max-width:940px){
+@media screen and (min-width:320px) and (max-width:940px){
     #createConnect{
         width: 100%;
         display: flex;

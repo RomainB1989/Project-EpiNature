@@ -14,9 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Sriracha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Liens Js -->
-    <script src="./accueil.js" defer></script>
-    <!-- <script src="./creation-connection.js" defer></script> -->
 </head>
 <body>
     <header title="Bannière Header" >
@@ -62,12 +59,12 @@
                             <div class="min-panier">
                                 <p>2</p>
                                 <p>Boule de Campagne</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                             <div class="min-panier">
                                 <p>1</p>
                                 <p>Troué</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                         </li>
                 </ul>
@@ -75,13 +72,13 @@
         </ul>
         
         <ul class="menu-mobile">   <!-- Menu Deroulant en Version Mobile -->
-            <li class="icon-menu" id="icon-account">
+            <li class="icon-menu">
                 <a href="./creation-connection.html">
-                    <img src="../Images/Icon-Account.png" width="auto" height="34px" alt="Icon Compte">
+                    <img src="../Images/Icon-Account.png" width="auto" height="40px" alt="Icon Compte"  id="icon-account">
                 </a>
             </li>
-            <li class="icon-menu" id="icon-burger">
-                <img src="../Images/Icon-Menu-Burger.png" width="auto" height="12px" alt="Icon Menu Burger">
+            <li class="icon-menu">
+                <img src="../Images/Icon-Menu-Burger.png" width="auto" height="40px" alt="Icon Menu Burger" id="icon-burger">
                 <ul class="menu-burger">
                     <li><a href="./presentation.html">Présentation</a></li>
                     <li><a href="./ou-nous-trouver.html">Ou Nous Trouver ?</a></li>
@@ -93,19 +90,19 @@
                     <li><a href="./gazette.html" target="_self">La Gazette du Boulanger</a></li>
                 </ul>
             </li>
-            <li class="icon-menu" id="icon-basket">
-                <img src="../Images/Shopping Basket.png" width="auto" height="40px" alt="Icon Panier">
+            <li class="icon-menu">
+                <img src="../Images/Shopping Basket.png" width="auto" height="40px" alt="Icon Panier" id="icon-basket">
                 <ul class="basket">
                         <li>
                             <div class="min-basket">
                                 <p>2</p>
                                 <p>Boule de Campagne</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                             <div class="min-basket">
                                 <p>1</p>
                                 <p>Troué</p>
-                                <button><img src="../Images/Delete.png" alt="Icon-Croix"></button>
+                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
                             </div>
                         </li>
                 </ul>
@@ -118,29 +115,34 @@
         <div class="formCreate">
             <h3>REJOIGNEZ NOUS</h3>
             <form id="create" method="" action="">
+                <p><span>*</span> = Information requise</p>
                 <div>
-                    <label for="nom">Nom :</label>
-                    <input type="text" name="nom" id="nom" placeholder="Ex: " required/>
+                    <label for="nom">Nom : <span>*</span></label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex: Jean" pattern="^[A-Za-z]{1,20}$" required/>
                 </div>
                 <div>
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Ex: " required/>
+                    <label for="prenom">Prénom : <span>*</span></label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ex: Bouing" pattern="^[A-Za-z]{1,20}$" required/>
                 </div>
                 <div>
-                    <label for="email">Adresse Mail :</label>
-                    <input type="email" name="email" id="email" placeholder="Ex: adresse@test.fr"  autocomplete="on"/>
+                    <label for="email">Adresse Mail : <span>*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Ex: adresse@test.fr" pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}" required autocomplete="on"/>
                 </div>
                 <div>
                     <label for="tel">Numéro de Téléphone :</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Ex: " required  autocomplete="on">
+                    <input type="tel" name="tel" id="tel" placeholder="Ex: 0678546215" autocomplete="on" pattern="^\+?[0]{1}[0-9]{9}$">
                 </div>
                 <div>
-                    <label for="password">Mot de Passe :</label>
-                    <input type="password" name="password" id="password" required>
+                    <label for="passwordCreate">Mot de Passe : <span>*</span></label>
+                    <input type="password" name="passwordCreate" id="passwordCreate" required>
                 </div>
                 <div>
-                    <label for="password2">Confirmer Mot de Passe :</label>
-                    <input type="password" name="password2" id="password2" required>
+                    <label for="createConfirm">Confirmer Mot de Passe : <span>*</span></label>
+                    <input type="password" name="passwordCreateConfirm" id="createConfirm" required>
+                </div>
+                <div>
+                    <label for="acceptCgu">Acceptez vous les Conditions Générales d'Utilisations : <span>*</span></label>
+                    <input type="checkbox" name="accept" id="acceptCgu" required>
                 </div>
                 <div>
                     <input type="submit" value="CREER VOTRE COMPTE" class="link" />
@@ -150,17 +152,18 @@
         <div class="formConnect">
             <h3>CONNECTEZ VOUS</h3>
             <form id="connect" method="" action="">
+                <p><span>*</span> = Information requise</p>
                 <div>
-                    <label for="email">Adresse Mail :</label>
-                    <input type="email" name="email" id="email" placeholder="Ex: " required  autocomplete="on"/>
+                    <label for="email">Adresse Mail : <span>*</span></label>
+                    <input type="email" name="email" id="emailConnect" placeholder="Ex: adresse@test.fr" pattern="^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$" required  autocomplete="on"/>
                 </div>
                 <div>
-                    <label for="password">Mot de Passe :</label>
-                    <input type="password" name="password" id="password" required>
+                    <label for="passwordConnect">Mot de Passe : <span>*</span></label>
+                    <input type="password" name="passwordConnect" id="passwordConnect" required>
                 </div>
                 <div>
-                    <label for="password2">Confirmer Mot de Passe :</label>
-                    <input type="password" name="password2" id="password2" required>
+                    <label for="connectConfirm">Confirmer Mot de Passe : <span>*</span></label>
+                    <input type="password" name="passwordConnectConfirm" id="connectConfirm" required>
                 </div>
                 <div>
                     <input type="submit" value="CONNEXION" class="link" />
@@ -185,4 +188,5 @@
                 <img src="../Images/Bouton Facebook.png" title="Facebook" alt="Lien Facebook" width="60px" height="60px"></a>
         </div>
     </footer>
+    <script src="../Front-End/accueil.js"></script>
 </body>

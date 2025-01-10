@@ -28,7 +28,7 @@
         background-color: var(--darkBrick);
     }
 
-    .article1{
+    .partenaire{
         margin: 20px 0px;
         display: flex;
         flex-direction: row;
@@ -90,16 +90,18 @@
     }
 }
 
-@media only screen and (min-width:320px) and (max-width:940px){
+@media screen and (min-width:320px) and (max-width:940px){
     #partenaires{
         width: 80%;
 
-        .article1{
+        .partenaire{
             display: flex;
             flex-direction: column;
             margin-right: 0px;
             margin-left: 0px;
             padding: 0px 0px;
+            
+
 
             .boxInfo1, .boxInfo2{
                 width: 100%;

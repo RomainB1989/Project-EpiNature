@@ -1,26 +1,29 @@
-const iconAccount = document.getElementById("icon-account");
-const iconBurger = document.getElementById("icon-burger");
-const iconBasket = document.getElementById("icon-basket");
+const iconBurger = document.querySelector("#icon-burger");
+const iconBasket = document.querySelector("#icon-basket");
+const menuBurger = document.querySelector(".menu-burger");
 
+let classes = menuBurger.classList;
+menuBurger.style.display = classes.value;
 
-iconAccount.addEventListener("click", function(){
-  changeBlock(iconAccount.childNodes[3].className, 0);
-});
+const basket = document.querySelector(".basket");
 
 iconBurger.addEventListener("click", function(){
-  changeBlock(iconBurger.childNodes[3].className, 0);
+ 
+  console.log("J'ai Clické sur le menu burger");
+  changeBlock(menuBurger);
 });
 
 iconBasket.addEventListener("click", function(){
-  changeBlock(iconBasket.childNodes[3].className, 0);
+  
+  console.log("J'ai Clické sur le menu panier");
+  changeBlock(basket);
 });
 
-function changeBlock(blockName, index) {
-  var block = document.body.getElementsByClassName(blockName);
-
-  if (block[index].style.display === "none") {
-    block[index].style.display = "block";
+function changeBlock(elementChange) {
+  // elementChange.style.display = elementChange.style.display == "none" ? "block" : "none"; //Ternaire du click declick pseudo toggle.
+  if (elementChange.style.display == "none") {
+    elementChange.style.display = "block";
   } else {
-    block[index].style.display = "none";
+    elementChange.style.display = "none";
   }
 }

@@ -9,8 +9,17 @@
     --darkBrick2 : #B53C24;
     --blackEarth: #1F1206;
 
-    /*  Valeurs  */
+    /*  Valeurs et Size */
     --height-menu: 60px;
+    --width-Title1: 7vw;
+    --width-Title2: 3vw;
+    --width-Title3: 1vw;
+    --width-Menu: 1.3vw;
+    --width-TextImportant: 1vw;
+    --width-Text: 1vw;
+
+
+    
 
     /* Font Style */
     --Pangolin : Pangolin;
@@ -58,12 +67,11 @@ header{
 .menu{
     background-color: var(--darkBrick2);
     height: auto;
-    width: 100%;
+    width: 100%; 
     
-    /* TODO  Trouver un moyen pour n'activer ce css que quand le scroll a dépassé la position naturelle de la navbar. */ 
-    /* position: fixed;
+    /* Bar de Menu de navigation coulissant */
+    position: sticky;
     top: 0;
-    z-index: 1030; */
 
     .menu-desktop{
         display: flex;
@@ -72,7 +80,7 @@ header{
         box-shadow: 0px 1px 2px 1px rgba(0);
         height: var(--height-menu);
         list-style-type: none;
-        font-size: 18px;
+        font-size: 20px;
 
         li{
             a{
@@ -103,7 +111,6 @@ header{
 
                 li{
                     background-color: var(--darkBrick2);
-                    /* background-color: rgba(186, 62, 37, 0.8); */
                     a{
                         color: var(--flour);
                     }
@@ -168,26 +175,24 @@ header{
         display: none;
         justify-content: space-evenly;
         text-align: center;
-        box-shadow: 0px 1px 2px 1px rgba(0);
-        height: auto;
         list-style-type: none;
-        font-size: 18px;
-
+        box-shadow: 0px 1px 2px 1px rgba(0);
         
         .icon-menu{
+            width: 30%;
             position: relative;
-            /* margin: 10px 0px;
-            border-radius: 10px;
-            border: var(--blackEarth) solid 5px; */
+            box-shadow: 0px 1px 2px 1px rgba(0);
 
             img{
-                padding: 20px 20px;
+                padding: 10px 10px;
                 margin: 10px 0px;
                 border-radius: 10px;
                 border: var(--blackEarth) solid 5px;
             };
             
-            .menu-account{
+
+            /* Il n'y a plus de sous menu account pour l'instant */
+            /* .menu-account{
                 display: none;
                 margin-top: var(--height-menu);
                 position: absolute;
@@ -198,72 +203,59 @@ header{
                         padding: 20px 20px;
                         text-decoration: none;
                         background-color: var(--darkBrick);
-                        color: var(--blackEarth);
+                        color: var(--flour);
                     }
                 }
-            }
+            } */
+
             .menu-burger{
                 display: none;
                 position: absolute;
+                right : 0%;
+                left: 0%;
+                width: auto;
+                padding: 10px 10px;
+                font-size: 20px;
                 list-style-type: none;
+                background-color: var(--darkBrick2);
                 li{
-                    position: relative;
-                    height: var(--height-menu);
+                    box-shadow: 0px 1px 2px 1px rgba(0);
+                    background-color: var(--darkBrick2);
+                    padding: 10px 0px;
+                    height: auto;
+                    width: auto;
                     a{
-                        text-decoration: none;
-                        background-color: var(--darkBrick);
-                        color: var(--blackEarth);
-                    }
-                    .sous-menu-burger{
-                        display: none;
-                        list-style-type: none;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        display: none;
-                        list-style-type: none;
-                        margin-top: var(--height-menu);
-                        top: 0;
-                        width: 100%;
-                        text-align: center;
-                        li{
-                            height: var(--height-menu);
-                            a{
-                                text-decoration: none;
-                                background-color: var(--darkBrick);
-                                color: var(--blackEarth);
-                            }
-                        }
+                        text-decoration: none;         
+                        color: var(--flour);
                     }
                 }
             }
-
+            
             .basket{
                 display: none;
                 position: absolute;
                 top: 0;
                 list-style-type: none;
                 margin-top: 120px;
-                width: 200%;
+                width: 100%;
                 text-align: center;
-    
+            
                 li{
-                    display: flex;
-                    
-                    top: 50%;
-                    left: 50%;
+                    right : 0%;
+                    left: 0%;
                     border: #1F1206 solid 3px;
                     border-radius: 10px;
-                    background-color: var(--breadPasta);
+                    background-color: var(--darkBrick2);
                     color: var(--blackEarth);
+                    display: flex; 
                     flex-direction: column;
-    
+            
                     .min-basket{
                         padding: 10px;
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
-    
+            
                         button{
                             background-color: none;
                             border: none;
@@ -277,41 +269,9 @@ header{
                 }
             }
         }
-
-        #icon-account{
-            img{
-                width: 30px;
-                height: 34px;
-            }
-        }
-
-        #icon-burger{
-            img{
-                width: 16px;
-                height: 12px;
-            }
-        }
-
-        #icon-basket{
-            img{
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-        /* #icon-account:active > .menu-account{
-            display: block;
-        }
-
-        #icon-burger:active > .menu-burger{
-            display: block;
-        }
-
-        #icon-basket:active > .basket{
-            display: block;
-        } */
     }
 }
+
 
 footer{
     background-color: var(--darkBrick);
@@ -361,9 +321,14 @@ footer{
 
 
 /* Responsive Design  A partir de (min-width=920px) */
-@media only screen and (min-width:320px) and (max-width:940px){
+@media screen and (min-width:320px) and (max-width:940px){
     header{
         height:100%;
+
+        /* .logo-head{
+            height: 80%;
+            width: auto;
+        } */
     }
     
     .menu{
