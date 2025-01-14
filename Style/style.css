@@ -1,7 +1,7 @@
 :root{
     /*  Color Theme :  */
 
-    --flour: #EBE5DA;
+    --flour: #f1efeb;
     --breadPasta: #FFE5B5;
     --goldWheat: #FFD700;
     --lightBrick: #E04B2D;
@@ -23,7 +23,7 @@
 
     /* Font Style */
     --Pangolin : Pangolin;
-    --Belanosima : Belanosima;
+    --Roboto : Roboto;
 
 }
 
