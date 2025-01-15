@@ -46,74 +46,73 @@ createPrenom.addEventListener("keyup", function(){
 });
 
 createPhone.addEventListener("keyup", function(){
-    console.log(createPhone.value);
-    if(regexPhone.test(createPhone.value)){
-        createPhone.style.backgroundColor = "green";
-    } else {
-        createPhone.style.backgroundColor = "red";
-    }
+    checkRegex(createPhone, regexPhone);
+    // if(regexPhone.test(createPhone.value)){
+    //     createPhone.style.backgroundColor = "green";
+    // } else {
+    //     createPhone.style.backgroundColor = "red";
+    // }
 });
 
 createEmail.addEventListener("keyup", function(){
-    console.log(createEmail.value);
-    if(regexMail.test(createEmail.value)){
-        createEmail.style.backgroundColor = "green";
-    } else {
-        createEmail.style.backgroundColor = "red";
-    }
+    checkRegex(createEmail, regexMail);
+    // if(regexMail.test(createEmail.value)){
+    //     createEmail.style.backgroundColor = "green";
+    // } else {
+    //     createEmail.style.backgroundColor = "red";
+    // }
 });
 
 createPassword.addEventListener("keyup", function(){
-    console.log(createPassword.value);
-    if(regexPassword.test(createPassword.value)){
-        createPassword.style.backgroundColor = "green";
-    } else {
-        createPassword.style.backgroundColor = "red";
-    }
+    checkRegex(createPassword, regexPassword);
+    // if(regexPassword.test(createPassword.value)){
+    //     createPassword.style.backgroundColor = "green";
+    // } else {
+    //     createPassword.style.backgroundColor = "red";
+    // }
 });
 
-function checkpassword(){
-    console.log(createPassword.value, createPassword2.value);
-    if(createPassword.value == createPassword2.value){
+function checkpassword(password1, password2){
+    //console.log(createPassword.value, createPassword2.value);
+    if(password1.value == password2.value){
         return true;
     }
     return false;
 }
 
 createPassword2.addEventListener("keyup", function(){
-    console.log(createPassword2.value);
-    if(regexPassword.test(createPassword2.value) && checkpassword()){
-        createPassword2.style.backgroundColor = "green";
+    if(regexPassword.test(createPassword2.value) && checkpassword(createPassword, createPassword2)){
+        createPassword2.style.backgroundColor = "#90ee90";
     } else {
-        createPassword2.style.backgroundColor = "red";
+        createPassword2.style.backgroundColor = "#FF7276";
     }
 });
 
 
 connectEmail.addEventListener("keyup", function(){
-    console.log(connectEmail.value);
-    if(regexMail.test(connectEmail.value)){
-        connectEmail.style.backgroundColor = "green";
-    } else {
-        connectEmail.style.backgroundColor = "red";
-    }
+    checkRegex(connectEmail, regexMail);
+    // if(regexMail.test(connectEmail.value)){
+    //     connectEmail.style.backgroundColor = "green";
+    // } else {
+    //     connectEmail.style.backgroundColor = "red";
+    // }
 });
 
 connectPassword.addEventListener("keyup", function(){
-    console.log(connectPassword.value);
-    if(regexPassword.test(connectPassword.value)){
-        connectPassword.style.backgroundColor = "green";
-    } else {
-        connectPassword.style.backgroundColor = "red";
-    }
+    checkRegex(connectPassword, regexPassword);
+    // if(regexPassword.test(connectPassword.value)){
+    //     connectPassword.style.backgroundColor = "green";
+    // } else {
+    //     connectPassword.style.backgroundColor = "red";
+    // }
 });
 
 connectPassword2.addEventListener("keyup", function(){
-    console.log(connectPassword2.value);
-    if(regexPassword.test(connectPassword2.value) && checkpassword()){
-        connectPassword2.style.backgroundColor = "green";
+
+    if(regexPassword.test(connectPassword2.value) && checkpassword(connectPassword,connectPassword2)){
+        connectPassword2.style.backgroundColor = "#90ee90";
     } else {
-        connectPassword2.style.backgroundColor = "red";
+        connectPassword2.style.backgroundColor = "#FF7276";
     }
 });
 
