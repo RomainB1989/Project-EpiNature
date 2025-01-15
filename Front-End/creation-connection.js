@@ -20,9 +20,9 @@ const connectPassword2 = formConnect.querySelector("#connectConfirm");
 function checkRegex(elementToChange, regex){
     console.log(elementToChange.value, regex);
     if(regex.test(elementToChange.value)){
-        elementToChange.style.backgroundColor = "green";
+        elementToChange.style.backgroundColor = "#90ee90";
     } else {
-        elementToChange.style.backgroundColor = "red";
+        elementToChange.style.backgroundColor = "#FF7276";
     }
 }
 

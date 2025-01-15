@@ -17,15 +17,15 @@
     --width-Menu: 1.3vw;
     --width-TextImportant: 1vw;
     --width-Text: 1vw;
-
-
     
-
     /* Font Style */
     --Pangolin : Pangolin;
     --Roboto : Roboto;
     --Gabarito : Gabarito;
 
+    /* Style Dynamique */
+    --incorrect : #FF7276;
+    --correct : #90ee90;
 }
 
 *{
