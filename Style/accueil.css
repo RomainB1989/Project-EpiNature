@@ -15,14 +15,16 @@
         margin: 30px 0px;
         text-align: center;
         color: var(--blackEarth);
-        font-size: var(--width-Title1);
+        font-size: 50px;
+        /* font-size: var(--width-Title1); */
     }
 
     h2{
         margin: 20px 0px;
         text-align: center;
         color: var(--darkBrick);
-        font-size: var(--width-Title2);
+        font-size: 30px;
+        /* font-size: var(--width-Title2); */
     }
 
     hr{
