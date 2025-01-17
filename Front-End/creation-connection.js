@@ -1,4 +1,4 @@
-// Règle de syntaxe des différents chanmp de text des formulaires
+// Règle de syntaxe des différents champ de text des formulaires
 const regexName = /^[A-Za-z]{1,20}$/;
 const regexMail = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
 const regexPhone = /^\+?[0]{1}[0-9]{9}$/;
