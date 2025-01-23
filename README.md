@@ -15,13 +15,11 @@ Version Déployé avec vercel.
 https://epinaturefr.vercel.app/
 ## Outils et Technologies
 
-**Client:** React, Redux, TailwindCSS
+**Front-End:** HTML, CSS, Javascript
 
-**Client:** React, Redux, TailwindCSS
+**Back-End:** Php, MySQL
 
-**Client:** React, Redux, TailwindCSS
-
-**Server:** Node, Express
+**Server:** Vercel -> Xamp
 
 
 ## Roadmap
