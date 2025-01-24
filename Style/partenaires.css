@@ -93,6 +93,14 @@
 @media screen and (min-width:300px) and (max-width:940px){
     #partenaires{
         width: 80%;
+        
+        h2{
+            font-size: 3em;
+        }
+
+        .important{
+            font-size: 1.3em;
+        }
 
         .partenaire{
             display: flex;
@@ -100,17 +108,28 @@
             margin-right: 0px;
             margin-left: 0px;
             padding: 0px 0px;
-            
-
 
             .boxInfo1, .boxInfo2{
                 width: 100%;
                 max-width: 100%;
-                padding: 10px 0px;
+                padding: 10px 10px;
                 margin-top: 10px;
                 margin-bottom: 20px;
                 margin-right: 0px;
                 margin-left: 0px;
+
+                .important{
+                    font-size: 2em;
+                }
+
+                .text{
+                    font-size: 1em;
+                }
+
+                button{
+                    width: 200px;
+                    font-size: 1em;
+                }
             }
 
             .responsive {

@@ -85,9 +85,9 @@
     } */
 }
 
-@media screen and (min-width:320px) and (max-width:940px){
+@media screen and (min-width:300px) and (max-width:940px){
     #createConnect{
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -18,10 +18,6 @@ const connectEmail = formConnect.querySelector("#emailConnect");
 const connectPassword = formConnect.querySelector("#passwordConnect");
 const connectPassword2 = formConnect.querySelector("#connectConfirm");
 
-const formContact = document.querySelector("#contact");
-const contactNom = formContact.querySelector("nomContact");
-const contactEmail = formContact.querySelector("#emailContact");
-
 
 /**
  * Fonction qui check un élément champ de texte avec la règle de syntaxe associé

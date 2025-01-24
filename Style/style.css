@@ -402,6 +402,9 @@ footer{
 
         .menu-mobile{
             display: flex;
+            .basket, .menu-burger{
+                width: 60%;
+            }
         }
     }
 

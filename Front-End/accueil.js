@@ -23,10 +23,12 @@ function changeIcon(icon, typeIcon){
 
 iconBurger.addEventListener('click', function() {
   changeIcon(iconBurger, "Burger");
+  // basket.classList.remove('active');
   menuBurger.classList.toggle('active');
 });
 
 iconBasket.addEventListener('click', function() {
   changeIcon(iconBasket, "Basket");
+  // menuBurger.classList.remove('active');
   basket.classList.toggle('active');
 });
