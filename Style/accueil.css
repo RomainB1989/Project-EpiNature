@@ -189,7 +189,7 @@
     }
 }
 
-@media screen and (min-width:320px) and (max-width:940px){
+@media screen and (min-width:300px) and (max-width:940px){
     #accueil{
         width: 80%;
 
@@ -201,23 +201,24 @@
             .boxInfo1{
                 margin-top: 10px;
                 margin-bottom: 20px;
-                margin-right: 0px;
-                max-width: 100%;
-                width: 100%;
+                width: inherit;
             }
 
             .responsive {
+                margin-left: 0px;
+                margin-top: 20px;
+                margin-bottom: 10px;
                 width: 100%;
                 max-width: 100%;
                 height: auto;
             }
 
-            img{
+            /* img{
                 margin-left: 0px;
                 margin-top: 20px;
                 margin-bottom: 10px;
                 width: 100%;
-            }
+            } */
         }
     }
 }
