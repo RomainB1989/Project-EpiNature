@@ -199,6 +199,7 @@
             width: 100%;
 
             .boxInfo1{
+                padding: 10px 0px;
                 margin-top: 10px;
                 margin-bottom: 20px;
                 width: inherit;

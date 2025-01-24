@@ -53,18 +53,20 @@
             <li class="deroulant">
                 <a href="#">Mon Panier</a> 
                 <ul class="panier"> <!-- Menu Deroulant en Version Desktop et Tablette -->
-                        <li>
-                            <div class="min-panier">
-                                <p>2</p>
-                                <p>Boule de Campagne</p>
-                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
-                            </div>
-                            <div class="min-panier">
-                                <p>1</p>
-                                <p>Troué</p>
-                                <button><img src="../Images/Icon-Delete.png" alt="Icon-Croix"></button>
-                            </div>
-                        </li>
+                    <li>
+                        <div class="min-panier">
+                            <p>2</p>
+                            <p>Boule de Campagne</p>
+                            <img src="../Images/Icon-Delete.png" alt="Icon-Croix">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="min-panier">
+                            <p>1</p>
+                            <p>Troué</p>
+                            <img src="../Images/Icon-Delete.png" alt="Icon-Croix">
+                        </div>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -111,16 +113,16 @@
     </nav>
 
     <main id="contact">
-        <div class="form-contact">
+        <div class="formulary" id="form-contact">
             <h3>ENVOYER NOUS UN MESSAGE</h2>
-            <form method="" action="">
+            <form action="mailto:romain.jimmy.bergout@gmail.com" method="get" enctype="text/plain" id="contact">
                 <div>
-                    <label for="nom">Nom :</label>
-                    <input type="text" name="nom" id="nom" placeholder="Ex: " />
+                    <label for="nomContact">Nom :</label>
+                    <input type="text" name="nom" id="nomConact" placeholder="Ex: Bernard" />
                 </div>
                 <div>
-                    <label for="email">Adresse Mail :</label>
-                    <input type="email" name="email" id="email" placeholder="Ex: " required/>
+                    <label for="emailContact">Adresse Mail :</label>
+                    <input type="email" name="email" id="emailContact" placeholder="Ex: " required/>
                 </div>
                 <div>
                     <label for="objet">Objet du Message :</label>
@@ -163,5 +165,6 @@
         </div>
     </footer>
     <!-- Liens Js -->
-    <script src="../Front-End/accueil.js"></script>
+    <script src="./formulary.js"></script>
+    <script src="./accueil.js"></script>
 </body>

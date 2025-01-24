@@ -101,17 +101,18 @@ header{
             position: relative;
             .sous-menu{
                 position: absolute;
-                top: 0;
+                top: 10;
                 left: 0;
                 display: none;
                 list-style-type: none;
-                margin-top: var(--height-menu);
-                top: 0;
+                border: var(--blackEarth) solid 4px;
+                border-radius: 10px;
                 width: 100%;
                 text-align: center;
 
                 li{
                     background-color: var(--darkBrick2);
+                    border-top: var(--blackEarth) solid 2px;
                     a{
                         color: var(--flour);
                     }
@@ -120,25 +121,26 @@ header{
                         transform: scale(1.1);
                     }
                 }
+
+                li:nth-child(1){
+                    border-top: none;
+                }
             }
 
             .panier{
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: 10;
+                right: 0;
                 display: none;
                 list-style-type: none;
-                margin-top: var(--height-menu);
-                top: 0;
-                width: 100%;
+                width: 300px;
                 text-align: center;
+                border: var(--blackEarth) solid 4px;
+                border-radius: 10px;
 
                 li{
-                    top: 50%;
-                    left: 50%;
-                    border: #1F1206 solid 3px;
-                    border-radius: 10px;
-                    background-color: var(--breadPasta);
+                    background-color: var(--darkBrick2);
+                    border-top: var(--blackEarth) solid 2px;
                     color: var(--blackEarth);
                     display: flex;
                     flex-direction: column;
@@ -146,14 +148,30 @@ header{
                     .min-panier{
                         padding: 10px;
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: space-evenly;
                         align-items: center;
+                        color: var(--flour);
 
-                        button{
-                            background-color: none;
+                        p:nth-child(1){
+                            width: 10%;        
+                        }
+
+                        p:nth-child(2){
+                            width:70%;
+                        }
+
+                        .icon-Delete{
+                            width: auto;
+                            height: auto;
                             border: none;
+                            padding: none;
+                            background-color: none;
                         }
                     }
+                }
+
+                li:nth-child(1){
+                    border-top: none;
                 }
             }
         }
@@ -309,6 +327,11 @@ header{
     }
 }
 
+main{
+    width:80%;
+    padding: 40px 0px;
+    margin: auto;
+}
 
 footer{
     background-color: var(--darkBrick);
@@ -381,6 +404,7 @@ footer{
             display: flex;
         }
     }
+
 
     footer{
         width: 100%;
