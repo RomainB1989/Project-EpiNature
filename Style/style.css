@@ -10,13 +10,13 @@
     --blackEarth: #1F1206;
 
     /*  Valeurs et Size */
-    --height-menu: 60px;
-    --width-Title1: 7vw;
-    --width-Title2: 3vw;
-    --width-Title3: 1vw;
-    --width-Menu: 1.3vw;
-    --width-TextImportant: 1vw;
-    --width-Text: 1vw;
+    --width-Title1: 50px;
+    --width-Title2: 32px;
+    --width-Title3: 26px;
+    --width-Menu: 20px;
+    --width-TextImportant: 24px;
+    --width-TextImportant2: 24px;
+    --width-Text: 16px;
     
     /* Font Style */
     --Pangolin : Pangolin;
@@ -382,6 +382,16 @@ footer{
 
 /* Responsive Design  A partir de (min-width=920px) */
 @media screen and (min-width:300px) and (max-width:940px){
+    :root{
+        --width-Title1: 4em;
+        --width-Title2: 3em;
+        --width-Title3: 2.5em;
+        --width-Menu: 1.1em;
+        --width-TextImportant: 2em;
+        --width-TextImportant2: 1.3em;
+        --width-Text: 1em;
+    }
+
     header{
         height: 300px;
 
