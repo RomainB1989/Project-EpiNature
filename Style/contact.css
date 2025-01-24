@@ -79,7 +79,6 @@
 
     .info-contact{
         width: 100%;
-        /* margin-left: 30px; */
         text-align: left;
 
         .important{
@@ -94,11 +93,23 @@
             margin: 6px 0px;
         }
 
-        iframe{
-            padding: 0px 20px;
-            padding-top: 20px;
-            padding-bottom: 40px;
+        div{
+            position: relative;
+            width: 80%;
+            margin: 20px auto;
+            padding-bottom: 50%;
+            padding-top: 25px;
+            height: 0;
+            
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
+
     }
     
 }
@@ -115,10 +126,6 @@
 
         .info-contact{
             margin-left: 0px;
-
-            iframe{
-                height: 300px;
-            }
         }
     }
 }
