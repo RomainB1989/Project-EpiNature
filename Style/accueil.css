@@ -15,16 +15,14 @@
         margin: 30px 0px;
         text-align: center;
         color: var(--blackEarth);
-        font-size: 50px;
-        /* font-size: var(--width-Title1); */
+        font-size: var(--width-Title1);
     }
 
     h2{
         margin: 20px 0px;
         text-align: center;
         color: var(--darkBrick);
-        font-size: 30px;
-        /* font-size: var(--width-Title2); */
+        font-size: var(--width-Title3);
     }
 
     hr{
@@ -45,10 +43,11 @@
 
         p{
             color: var(--flour);
-            padding: 10px 0px;
+            padding: 10px 10px;
             font-family: Belanosima;
             text-align: center;
             font-size: 20px;
+            font-size: var(--width-Text);
         }
     }
 
@@ -72,12 +71,12 @@
             border-radius: 10px;
 
             .important{
-                font-size: 24px;
+                font-size: var(--width-TextImportant2);
                 margin: 6px 0px;
             }
 
             p{
-                font-size: 16px;
+                font-size: var(--width-Text);
                 margin: 6px 0px;
             }
 
@@ -86,7 +85,7 @@
                 margin: 10px 0px;
                 padding: 5px 25px;
                 font-family: Pangolin;
-                font-size: 22px;
+                font-size: var(--width-Text);
                 border: solid var(--blackEarth);
                 background-color: var(--breadPasta);
                 border-radius: 20px;
@@ -120,7 +119,7 @@
 
         .important{
             font-family: Belanosima;
-            font-size: 24px;
+            font-size: var(--width-TextImportant2);
             margin: 6px 0px;
         }
 
@@ -129,7 +128,7 @@
             padding: 5px 25px;
             margin: 10px 0px;
             font-family: Pangolin;
-            font-size: 20px;
+            font-size: var(--width-Text);
             border: solid var(--blackEarth);
             background-color: var(--breadPasta);
             border-radius: 20px;
@@ -151,12 +150,12 @@
         background-color: rgba(186, 62, 37, 0.5);
         padding: 10px 20px;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: var(--width-Text);
         font-family: Belanosima;
 
         h3{
             font-family: Pangolin;
-            font-size: 32px;
+            font-size: var(--width-Title3);
             margin: 10px 0px;
         }
 

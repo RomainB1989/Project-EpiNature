@@ -12,11 +12,11 @@
         margin: 20px 0px;
         text-align: center;
         font-family: Pangolin;
-        font-size: 32px;
+        font-size: var(--width-Title2);
     }
 
     .important{
-        font-size: 24px;
+        font-size: var(--width-TextImportant2);
         margin: 6px 0px;
     }
 
@@ -46,12 +46,12 @@
 
             .important{
                 text-align: center;
-                font-size: 24px;
+                font-size: var(--width-TextImportant);
                 margin: 6px 0px;
             }
 
             .text{
-                font-size: 16px;
+                font-size: var(--width-Text);
                 margin: 20px 0px;
             }
 
@@ -60,7 +60,7 @@
                 padding: 5px 25px;
                 margin: 10px 0px;
                 font-family: Pangolin;
-                font-size: 20px;
+                font-size: var(--width-Text);
                 border: solid var(--blackEarth);
                 background-color: var(--breadPasta);
                 border-radius: 20px;
@@ -94,13 +94,13 @@
     #partenaires{
         width: 80%;
         
-        h2{
+        /* h2{
             font-size: var(--width-Title2);
         }
 
         .important{
             font-size: var(--width-TextImportant2);
-        }
+        } */
 
         .partenaire{
             display: flex;
@@ -118,17 +118,17 @@
                 margin-right: 0px;
                 margin-left: 0px;
 
-                .important{
+                /* .important{
                     font-size: var(--width-TextImportant);
                 }
 
                 .text{
                     font-size: var(--width-Text);
-                }
+                } */
 
                 button{
                     width: 200px;
-                    font-size: var(--width-Text);
+                    /* font-size: var(--width-Text); */
                 }
             }
 

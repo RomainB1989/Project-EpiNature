@@ -11,11 +11,11 @@
 
     /*  Valeurs et Size */
     --width-Title1: 50px;
-    --width-Title2: 32px;
-    --width-Title3: 26px;
-    --width-Menu: 20px;
-    --width-TextImportant: 24px;
-    --width-TextImportant2: 24px;
+    --width-Title2: 36px;
+    --width-Title3: 30px;
+    --width-Menu: 1.1em;
+    --width-TextImportant: 26px;
+    --width-TextImportant2: 22px;
     --width-Text: 16px;
     
     /* Font Style */
@@ -81,7 +81,7 @@ header{
         box-shadow: 0px 1px 2px 1px rgba(0);
         height: auto;
         list-style-type: none;
-        font-size: 20px;
+        font-size: var(--width-Menu);
 
         li{
             a{
@@ -208,6 +208,7 @@ header{
                 margin: 10px 0px;
                 border-radius: 10px;
                 border: var(--blackEarth) solid 5px;
+                box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
             };
             
 
@@ -242,6 +243,7 @@ header{
             font-size: 20px;
             border: var(--blackEarth) solid 4px;
             border-radius: 10px;
+            box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
             list-style-type: none;
             background-color: var(--darkBrick2);
             
@@ -423,7 +425,7 @@ footer{
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-
+        font-size: var(--width-Text);
         div a{
             padding: 10px 0px;
         }
