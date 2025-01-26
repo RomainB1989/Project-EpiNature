@@ -10,13 +10,13 @@
     --blackEarth: #1F1206;
 
     /*  Valeurs et Size */
-    --width-Title1: 50px;
-    --width-Title2: 36px;
-    --width-Title3: 30px;
-    --width-Menu: 20px;
-    --width-TextImportant: 26px;
-    --width-TextImportant2: 22px;
-    --width-Text: 16px;
+    --width-Title1: 60px;
+    --width-Title2: 40px;
+    --width-Title3: 24px;
+    --width-Menu: 17px;
+    --width-TextImportant: 20px;
+    --width-TextImportant2: 17px;
+    --width-Text: 15px;
     
     /* Font Style */
     --Pangolin : Pangolin;
@@ -195,20 +195,18 @@ header{
         justify-content: space-evenly;
         text-align: center;
         list-style-type: none;
-        box-shadow: 0px 1px 2px 1px rgba(0);
         height: auto;
         
         .icon-menu{
             width: 30%;
             position: relative;
-
             img{
                 cursor: pointer;
-                padding: 10px 10px;
-                margin: 10px 0px;
-                border-radius: 10px;
+                padding: 5px 5px;
+                margin: 5px 0px;
+                /* border-radius: 10px;
                 border: var(--blackEarth) solid 5px;
-                box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+                box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75); */
             };
             
 
@@ -240,7 +238,7 @@ header{
             left: 0;
             width: 40%;
             padding: 0px 10px;
-            font-size: 20px;
+            font-size: var(--width-Menu);
             border: var(--blackEarth) solid 4px;
             border-radius: 10px;
             box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
@@ -294,7 +292,7 @@ header{
             right: 0;
             width: 40%;
             padding: 10px 10px;
-            font-size: 20px;
+            font-size: var(--width-Menu);
             border: var(--blackEarth) solid 4px;
             border-radius: 10px;
             list-style-type: none;
@@ -371,7 +369,7 @@ footer{
 
     div a{
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: var(--width-TextImportant);
         color: #1F1206;
     }
 
@@ -385,13 +383,13 @@ footer{
 /* Responsive Design  A partir de (min-width=920px) */
 @media screen and (min-width:300px) and (max-width:940px){
     :root{
-        --width-Title1: 4em;
-        --width-Title2: 3em;
-        --width-Title3: 2.5em;
-        --width-Menu: 1.1em;
-        --width-TextImportant: 2em;
-        --width-TextImportant2: 1.3em;
-        --width-Text: 1em;
+        --width-Title1: 36;
+        --width-Title2: 24;
+        --width-Title3: 20;
+        --width-Menu: 15;
+        --width-TextImportant: 17;
+        --width-TextImportant2: 16;
+        --width-Text: 14;
     }
 
     header{
