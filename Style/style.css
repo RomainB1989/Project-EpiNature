@@ -365,13 +365,13 @@ footer{
 /* Responsive Design  A partir de (min-width=920px) */
 @media screen and (min-width:300px) and (max-width:940px){
     :root{
-        --width-Title1: 44;
-        --width-Title2: 32;
-        --width-Title3: 24;
-        --width-Menu: 15;
-        --width-TextImportant: 17;
-        --width-TextImportant2: 16;
-        --width-Text: 14;
+        --width-Title1: 44px;
+        --width-Title2: 32px;
+        --width-Title3: 20px;
+        --width-Menu: 15px;
+        --width-TextImportant: 17px;
+        --width-TextImportant2: 16px;
+        --width-Text: 14px;
     }
 
     header{

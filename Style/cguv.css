@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     font-family: Belanosima;
-    font-size: 20px;
+    font-size: var(--width-Text);
     text-align: left;
     background-color: rgba(186, 62, 37, 0.5);
     color: var(--blackEarth);
@@ -14,7 +14,7 @@
     h3{
         text-align: center;
         font-family: Pangolin;
-        font-size: 32px;
+        font-size: var(--width-Title3);
         margin: 30px 0px;
     }
 
@@ -29,13 +29,13 @@
     }
 
     .category{
-        font-size: 24px;
+        font-size: var(--width-TextImportant);
         margin-top: 40px;
         margin-bottom: 10px;
     }
 
     .subCategory{
-        font-size: 22px;
+        font-size: var(--width-TextImportant2);
         margin: 10px 0px;
     }
 
@@ -44,5 +44,6 @@
 @media screen and (min-width:300px) and (max-width:920px){
     #cguv{
         width: 80%;
+        margin: 20px auto;
     }
 }

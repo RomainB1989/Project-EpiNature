@@ -1,31 +1,31 @@
 #ouNousTrouver{
-    margin: 30px auto;
+    padding: 40px 0px;
     
     article{
         width: 900px;
-        padding: 40px 30px;
+        padding: 20px 30px;
         margin: 30px auto;
         display: flex;
         flex-direction: column;
-        font-size: 20px;
+        font-size: var(--width-Text);
         background-color: rgba(186, 62, 37, 0.5);
         color: var(--blackEarth);
         border-radius: 10px;
     }
 
-    .boxText{
+    .boxText, .boxContent{
         font-family: Belanosima;
         text-align: left;
     
         h3{
             text-align: center;
             font-family: Pangolin;
-            font-size: 32px;
+            font-size: var(--width-Title3);
             margin: 30px 0px;
         }
     
         .important{
-            font-size: 24px;
+            font-size: var(--width-TextImportant);
             text-align: center;
             margin-top: 40px;
             margin-bottom: 10px;
@@ -49,47 +49,30 @@
         a:hover{
             color: var(--goldWheat);
         }
-    }
 
-    .boxContent{
-        font-family: Pangolin;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 30px;
-
-        h3{
-            font-size: 32px;
-            margin: 30px 0px;
-        }
-
-        div{
-            position: relative;
-            width: 80%;
+        iframe{
+            width: 90%;
+            height: 600px;
             margin: 20px auto;
-            padding-bottom: 50%;
-            padding-top: 25px;
-            height: 0;
-            
-            iframe{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
         }
     }
 }
 
 @media screen and (min-width:300px) and (max-width:940px){
     #ouNousTrouver{
-        width: 80%;
+        width: 95%;
+        padding: 20px 0px;
 
         article{
-            width: 80%;
+            width: 90%;
+            padding: 20px 10px;
         }
 
+        .boxContent{
+            iframe{
+                width: 96%;
+                /* height: 400px; */
+            }
+        }
     }
 }

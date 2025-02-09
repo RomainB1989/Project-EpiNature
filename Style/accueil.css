@@ -26,6 +26,9 @@
     }
 
     hr{
+        display: flex;
+        align-self: center;
+        width: 90%;
         margin: 20px 0px;
         height: 3px;
         border: none;
@@ -190,7 +193,7 @@
 
 @media screen and (min-width:300px) and (max-width:940px){
     #accueil{
-        width: 80%;
+        width: 90%;
 
         .article1{
             display: flex;
@@ -202,6 +205,11 @@
                 margin-top: 10px;
                 margin-bottom: 20px;
                 width: inherit;
+
+                p, .important{
+                    padding: 5px 0px;
+                    margin: 0px 10px;
+                }
             }
 
             .responsive {
@@ -212,13 +220,6 @@
                 max-width: 100%;
                 height: auto;
             }
-
-            /* img{
-                margin-left: 0px;
-                margin-top: 20px;
-                margin-bottom: 10px;
-                width: 100%;
-            } */
         }
     }
 }

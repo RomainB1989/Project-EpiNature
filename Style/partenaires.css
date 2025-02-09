@@ -17,10 +17,15 @@
 
     .important{
         font-size: var(--width-TextImportant2);
+        text-align: center;
         margin: 6px 0px;
+        margin-bottom: 20px;
     }
 
     hr{
+        display: flex;
+        align-self: center;
+        width: 90%;
         margin: 20px 0px;
         height: 3px;
         border: none;
@@ -92,15 +97,7 @@
 
 @media screen and (min-width:300px) and (max-width:940px){
     #partenaires{
-        width: 80%;
-        
-        /* h2{
-            font-size: var(--width-Title2);
-        }
-
-        .important{
-            font-size: var(--width-TextImportant2);
-        } */
+        width: 90%;
 
         .partenaire{
             display: flex;
@@ -112,36 +109,31 @@
             .boxInfo1, .boxInfo2{
                 width: 100%;
                 max-width: 100%;
-                padding: 10px 10px;
+                padding: 10px 0px;
                 margin-top: 10px;
                 margin-bottom: 20px;
                 margin-right: 0px;
                 margin-left: 0px;
 
-                /* .important{
-                    font-size: var(--width-TextImportant);
+                p, .important{
+                    padding: 5px 0px;
+                    margin: 0px 10px;
                 }
-
-                .text{
-                    font-size: var(--width-Text);
-                } */
 
                 button{
                     width: 200px;
-                    /* font-size: var(--width-Text); */
                 }
             }
 
             .responsive {
                 margin-left: 0px;
                 margin-right: 0px;
-                margin-top: 20px;
+                margin-top: 10px;
                 margin-bottom: 10px;
                 width: 100%;
                 max-width: 100%;
                 height: auto;
             }
-
         }
     }
 }
