@@ -71,7 +71,7 @@
         .boxContent{
             iframe{
                 width: 96%;
-                /* height: 400px; */
+                height: 400px;
             }
         }
     }
