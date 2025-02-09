@@ -196,9 +196,11 @@ header{
         text-align: center;
         list-style-type: none;
         height: auto;
-        border-bottom: var(--blackEarth) solid 3px;
+        /* border-top: var(--lightBrick) solid 3px; */
+        /* border-bottom: var(--lightBrick) solid 3px; */
         /* border-radius: 10px 0px 0px 10px; */
         background-color: var(--breadPasta);
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
         
         .icon-menu{
             width: 30%;
@@ -221,8 +223,8 @@ header{
             width: 40%;
             padding: 0px 10px;
             font-size: var(--width-Menu);
-            /* border: var(--blackEarth) solid 4px;
-            border-radius: 10px; */
+            /* border: var(--blackEarth) solid 4px; */
+            border-radius: 10px;
             /* box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75); */
             list-style-type: none;
             background-color: var(--breadPasta);

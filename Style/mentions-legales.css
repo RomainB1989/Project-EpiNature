@@ -1,11 +1,10 @@
 #mentions{
     width: 900px;
-    padding: 40px 30px;
+    padding: 40px 0px;
     margin: 40px auto;
     display: flex;
     flex-direction: column;
     font-family: Belanosima;
-    font-size: 20px;
     text-align: left;
     background-color: rgba(186, 62, 37, 0.5);
     color: var(--blackEarth);
@@ -14,17 +13,19 @@
     h3{
         text-align: center;
         font-family: Pangolin;
-        font-size: 32px;
+        font-size: var(--width-Title3);
         margin: 30px 0px;
     }
 
     p{
+        font-size: var(--width-TextImportant2);
         text-align: left;
+        padding: 0px 20px;
         margin: 8px 0px;
     }
 
     .category{
-        font-size: 24px;
+        font-size: var(--width-TextImportant);
         margin-top: 40px;
         margin-bottom: 10px;
     }
@@ -32,6 +33,6 @@
 
 @media screen and (min-width:300px) and (max-width:920px){
     #mentions{
-        width: 80%;
+        width: 95%;
     }
 }

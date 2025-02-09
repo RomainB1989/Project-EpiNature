@@ -4,10 +4,10 @@
     <meta charset="utf8">
     <meta name="description" content="Page Acceuil">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'EpiNature - Contacter Nous !</title>
+    <title>L'EpiNature - Presentation</title>
     <!-- Fiches CSS -->
     <link rel="stylesheet" href="../Style/style.css">
-    <link rel="stylesheet" href="../Style/contact.css">
+    <link rel="stylesheet" href="../Style/presentation.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +25,8 @@
                 <a href="../index.html" target="_self">Accueil</a>
             </li>
             <li class="deroulant">
+                <a href="./presentation.html">Présentation</a>
                 <ul class="sous-menu">
-                    <li><a href="./presentation.html">Présentation</a></li>
                     <li><a href="./ou-nous-trouver.html">Ou Nous Trouver ?</a></li>
                     <li><a href="./contact.html">Nous Contacter !</a></li>
                     <li><a href="./partenaires.html">Nos Partenaires</a></li>
@@ -112,42 +112,85 @@
         </ul>
     </nav>
 
-    <main id="contact">
-        <div class="formulary" id="form-contact">
-            <h3>ENVOYER NOUS UN MESSAGE</h2>
-            <form action="mailto:romain.jimmy.bergout@gmail.com" method="get" enctype="text/plain" id="contact">
-                <div>
-                    <label for="nomContact">Nom :</label>
-                    <input type="text" name="nom" id="nomConact" placeholder="Ex: Bernard" />
+    <main id="presentation">
+        <h1>Bienvenue chez l’Epinature</h1>
+        <h2>Une boulangerie bio engagée à Bessières</h2>
+        <article class="boxText">
+            <p>L’Epinature est une boulangerie bio située dans la charmante ville de Bessières, au nord-est de Toulouse. Fondée peu après la pandémie de COVID-19, elle s’inscrit dans une démarche de retour aux sources et de respect de l’environnement. Nous croyons fermement que la boulangerie peut jouer un rôle majeur dans la santé et le bien-être de notre communauté.</p>
+        </article>
+        <article class="boxText">
+            <h3>Notre Mission</h3>
+            <p>À l’Epinature, notre mission est de régaler vos papilles tout en préservant la planète. Chaque produit, du pain aux pâtisseries, est le fruit d’un savoir-faire artisanal et d’une passion pour la bonne cuisine, en utilisant uniquement des ingrédients biologiques et locaux.</p>
+        </article>
+        <article class="slideshow">
+            <h3>Nos Membres :</h3>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="../Images/member1.jpg">
+                    <div class="memberName">Marie SEVENAS</div>
                 </div>
-                <div>
-                    <label for="emailContact">Adresse Mail :</label>
-                    <input type="email" name="email" id="emailContact" placeholder="Ex: " required/>
+                <div class="mySlides fade">
+                    <img src="../Images/member2.jpg">
+                    <div class="memberName">Jeremy LOUSERGUE</div>
                 </div>
-                <div>
-                    <label for="objet">Objet du Message :</label>
-                    <input type="text" name="objet" id="objet" />
+                <div class="mySlides fade">
+                    <img src="../Images/member3.jpg">
+                    <div class="memberName">Céline MELARD</div>
                 </div>
-                <div>
-                    <label for="message">Message :</label><br>
-                    <textarea name="message" id="message" rows="10" required></textarea>
+                <div class="mySlides fade">
+                    <img src="../Images/member4.jpg">
+                    <div class="memberName">Pauline MAGOUX</div>
                 </div>
-                <div>
-                    <input type="submit" value="ENVOYER MESSAGE" class="link" />
+                <div class="mySlides fade">
+                    <img src="../Images/member5.jpg">
+                    <div class="memberName">Bernard CHAMBLOIS</div>
                 </div>
-            </form>
-        </div>
-        <div class="info-contact">
-            <h3>COMMENT NOUS CONTACTER</h2>
-            <p class="important">Adresse :</p>
-            <p>39 Pl. Saint-Jean 31660 Bessières.</p>
-            <p>Tél de Marie : 06 63 42 42 10</p>
-            <p>Tél du Fournil : 05 61 42 42 10</p>
-            <p class="important">Ou nous Sommes :</p>
-            <iframe title="Map Ump-OpenStreetMap Localisation Fournil EpiNature" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.fr/fr/map/localisations-epinature_1158085?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&datalayers=42468a56-94c8-473d-ba00-a3b23b6a1bf5#16/43.8007/1.6057"></iframe>
-        </div>
+                <div class="mySlides fade">
+                    <img src="../Images/member6.jpg">
+                    <div class="memberName">Dorian BOULAIN</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1);">&#10094;</a>
+                <a class="next" onclick="plusSlides(1);">&#10095;</a>
+            </div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1);"></span>
+                <span class="dot" onclick="currentSlide(2);"></span>
+                <span class="dot" onclick="currentSlide(3);"></span>
+                <span class="dot" onclick="currentSlide(4);"></span>
+                <span class="dot" onclick="currentSlide(5);"></span>
+                <span class="dot" onclick="currentSlide(6);"></span>
+            </div>
+        </article>
+        <article class="boxText">
+            <h3>Nos Produits</h3>
+            <p>Nous avons le plaisir de vous proposer une large sélection de produits :
+                <ul>
+                    <li><strong>Pains</strong> : Pain complet, pain de seigle, baguettes traditionnelles, tous fabriqués à partir de farines biologiques.</li>
+                    <li><strong>Pâtisseries</strong>Tartes aux fruits, éclairs au chocolat et bien d’autres douceurs de saison.</li>
+                    <li><strong>Viennoiseries</strong>Croissants, pains au chocolat et autres délicieuses viennoiseries préparées avec du beurre bio.</li>
+                    <li><strong>Spécialités locales</strong>Un clin d’œil à notre terroir à travers nos recettes régionales.</li>
+                </ul>
+            </p>
+        </article>
+        <article class="boxText">
+            <h3>Distribution sur les Marchés</h3>
+            <p>Actuellement, l’Epinature est présente sur plusieurs marchés de la région, offrant nos produits frais et biologiques directement aux consommateurs. Nous sommes fiers de contribuer à l’économie locale et de rencontrer nos clients dans ces lieux d’échange vibrant.</p>
+        </article>
+        <article class="boxText">
+            <h3>Vers une Livraison Générale</h3>
+            <p>Dans notre quête pour répondre aux besoins croissants de notre clientèle, nous cherchons à développer des solutions de livraison pratiques. Nous avons pour projet d’implémenter un service de livraison dans des points de collecte à travers l’agglomération toulousaine. Cela permettra à un plus grand nombre de personnes de profiter de nos produits artisanaux à leur convenance, tout en préservant notre engagement envers des pratiques durables.</p>
+        </article>
+        <article class="boxText">   
+            <h3>Un Lieu de Vie</h3>
+            <p>Plus qu’une simple boulangerie, l’Epinature est un lieu d’échange et de partage. Nous vous invitons à déguster vos produits sur place et à rencontrer vos voisins. Nous organisons régulièrement des ateliers pour sensibiliser notre communauté à l’importance d’une alimentation durable.</p>
+        </article>
+        <article class="boxText">   
+            <h3>Conclusion</h3>
+            <p>L’Epinature vous invite à découvrir un monde où le goût authentique se marie à une conscience écologique. Nous avons hâte de vous accueillir et de partager avec vous notre amour pour le pain et la pâtisserie bio. Que vous soyez un adepte des produits biologiques ou simplement curieux, vous trouverez votre bonheur chez nous.</p>
+        </article>
     </main>
-
     <footer>
         <div>
             <a href="./cguv.html" target="_self">CGU-V</a>
@@ -163,6 +206,7 @@
         </div>
     </footer>
     <!-- Liens Js -->
-    <script src="./formulary2.js"></script>
-    <script src="./accueil.js"></script>
+    <script src="../Front-End/accueil.js"></script>
+    <script src="../Front-End/slideshow.js"></script>
 </body>
+</html>
