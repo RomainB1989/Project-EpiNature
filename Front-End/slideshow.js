@@ -6,8 +6,8 @@ function changeSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
+// dots 
+function getSlide(n) {
   showSlides(slideIndex = n);
 }
 

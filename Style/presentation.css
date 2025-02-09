@@ -195,6 +195,10 @@
                 .prev, .next{
                     font-size: var(--width-TextImportant);
                 }
+
+                .prev:hover, .next:hover {
+                    background-color: rgba(186, 62, 37, 0.5);
+                }
             }
         }
     }
