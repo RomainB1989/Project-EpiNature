@@ -58,7 +58,7 @@
         }
 
         p{
-            font-size: var(--width-TextImportant);
+            font-size: var(--width-Text);
             margin: 6px 0px;
         }
 
@@ -74,11 +74,8 @@
     }
 
     .slideshow{
-
-
-
-
         h3{
+            text-align: center;
             font-family: Pangolin;
             font-size: var(--width-Title3);
             margin: 10px 0px;
@@ -86,7 +83,7 @@
 
         /* Slideshow container */
         .slideshow-container {
-            max-width: 1000px;
+            max-width: 900px;
             position: relative;
             margin: auto;
             
@@ -95,18 +92,26 @@
                 display: none;
 
                 img{
+                    border-radius: 20px;
                     width: 100%;
+                    height: auto;
+                    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
                 }
 
                 /* Caption text */
                 .memberName {
-                    color: #f2f2f2;
-                    font-size: 15px;
-                    padding: 8px 12px;
+                    color: var(--breadPasta);
+                    font-size: var(--width-Title2);
+                    background-color: rgba(186, 62, 37, 0.5);
+                    padding: 8px 10px;
                     position: absolute;
-                    bottom: 8px;
-                    width: 100%;
+                    left: 30%;
+                    right: 30%;
+                    bottom: 5px;
+                    width: 40%;
+                    margin: 0px auto;
                     text-align: center;
+                    border-radius: 10px 10px 0px 0px;
                 }
             }
         
@@ -118,15 +123,22 @@
                 width: auto;
                 margin-top: -22px;
                 padding: 16px;
-                color: white;
+                background-color: rgba(186, 62, 37, 0.5);
+                color: var(--breadPasta);
                 font-weight: bold;
                 font-size: 18px;
                 transition: 0.6s ease;
                 border-radius: 0 3px 3px 0;
                 user-select: none;
+                font-size: var(--width-Title2);
             }
 
             /* Position the "next button" to the right */
+            .prev{
+                left: 0;
+                border-radius: 0 3px 3px 0;
+            }
+            
             .next {
                 right: 0;
                 border-radius: 3px 0 0 3px;
@@ -134,7 +146,7 @@
             
             /* On hover, add a black background color with a little bit see-through */
             .prev:hover, .next:hover {
-                background-color: rgba(0,0,0,0.8);
+                background-color: rgba(186, 62, 37, 1);
             }
         }
 
@@ -155,46 +167,34 @@
             height: 15px;
             width: 15px;
             margin: 0 2px;
-            background-color: #bbb;
+            background-color: rgba(186, 62, 37, 0.5);
             border-radius: 50%;
             display: inline-block;
             transition: background-color 0.6s ease;
           }
           
           .active, .dot:hover {
-            background-color: #717171;
+            background-color: rgba(186, 62, 37, 1);
           }
     }
 }
 
 @media screen and (min-width:300px) and (max-width:940px){
-    #accueil{
-        width: 90%;
-
-        .article1{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-
-            .boxInfo1{
-                padding: 10px 0px;
-                margin-top: 10px;
-                margin-bottom: 20px;
-                width: inherit;
-
-                p, .important{
-                    padding: 5px 0px;
-                    margin: 0px 10px;
+    #presentation{
+        width: 95%;
+        .slideshow{
+            .slideshow-container{
+                .mySlides{
+                    .memberName{
+                        left: 30%;
+                        right: 30%;
+                        font-size: var(--width-TextImportant);
+                    }
                 }
-            }
 
-            .responsive {
-                margin-left: 0px;
-                margin-top: 20px;
-                margin-bottom: 10px;
-                width: 100%;
-                max-width: 100%;
-                height: auto;
+                .prev, .next{
+                    font-size: var(--width-TextImportant);
+                }
             }
         }
     }

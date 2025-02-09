@@ -68,7 +68,8 @@ header{
 .menu{
     background-color: var(--darkBrick2);
     height: auto;
-    width: 100%; 
+    width: 100%;
+    z-index: 1000;
     
     /* Bar de Menu de navigation coulissant */
     position: sticky;
