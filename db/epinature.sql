@@ -1,4 +1,4 @@
-CREATE DATABASE epinature;
+CREATE DATABASE IF NOT EXISTS epinature CHAR SET utf8mb4;
 
 USE epinature;
 
@@ -42,7 +42,7 @@ CREATE TABLE users(
    lastname VARCHAR(50) NOT NULL,
    password VARCHAR(255) NOT NULL,
    id_role INT,
-   CONSTRAINT fk_users_role FOREIGN KEY(id_role) REFERENCES `role`(id_role)
+   CONSTRAINT fk_users_role FOREIGN KEY(id_role) REFERENCES `role`(id_role) ON DELETE CASCADE
 );
 
 CREATE TABLE article(
@@ -51,7 +51,7 @@ CREATE TABLE article(
    article_text VARCHAR(1000),
    article_date DATETIME NOT NULL,
    user_id INT NOT NULL,
-   CONSTRAINT fk_article_user FOREIGN KEY(user_id) REFERENCES users(user_id)
+   CONSTRAINT fk_article_user FOREIGN KEY(user_id) REFERENCES users(user_id) ON DELETE CASCADE
 );
 
 CREATE TABLE orders(
@@ -62,8 +62,8 @@ CREATE TABLE orders(
    order_state VARCHAR(15) NOT NULL,
    id_location INT NOT NULL,
    user_id INT NOT NULL,
-   CONSTRAINT fk_order_location FOREIGN KEY(id_location) REFERENCES location(id_location),
-   CONSTRAINT fk_order_user FOREIGN KEY(user_id) REFERENCES users(user_id)
+   CONSTRAINT fk_order_location FOREIGN KEY(id_location) REFERENCES location(id_location) ON DELETE CASCADE,
+   CONSTRAINT fk_order_user FOREIGN KEY(user_id) REFERENCES users(user_id) ON DELETE CASCADE
 );
 
 CREATE TABLE contain(
@@ -71,30 +71,30 @@ CREATE TABLE contain(
    order_id INT NOT NULL,
    order_quantity INT NOT NULL,
    PRIMARY KEY(product_id, order_id),
-   CONSTRAINT fk_contain_product FOREIGN KEY(product_id) REFERENCES products(product_id),
-   CONSTRAINT fk_contain_order FOREIGN KEY(order_id) REFERENCES orders(order_id)
+   CONSTRAINT fk_contain_product FOREIGN KEY(product_id) REFERENCES products(product_id) ON DELETE CASCADE,
+   CONSTRAINT fk_contain_order FOREIGN KEY(order_id) REFERENCES orders(order_id) ON DELETE CASCADE
 );
 
 CREATE TABLE `show`(
    product_id INT NOT NULL,
    id_image INT NOT NULL,
    PRIMARY KEY(product_id, id_image),
-   CONSTRAINT fk_show_product FOREIGN KEY(product_id) REFERENCES Products(product_id),
-   CONSTRAINT fk_show_image FOREIGN KEY(id_image) REFERENCES image(id_image)
+   CONSTRAINT fk_show_product FOREIGN KEY(product_id) REFERENCES Products(product_id) ON DELETE CASCADE,
+   CONSTRAINT fk_show_image FOREIGN KEY(id_image) REFERENCES image(id_image) ON DELETE CASCADE
 );
 
 CREATE TABLE possess(
    id_location INT NOT NULL,
    id_image INT NOT NULL,
    PRIMARY KEY(id_location, id_image),
-   CONSTRAINT fk_possess_location FOREIGN KEY(id_location) REFERENCES location(id_location),
-   CONSTRAINT fk_possess_image FOREIGN KEY(id_image) REFERENCES image(id_image)
+   CONSTRAINT fk_possess_location FOREIGN KEY(id_location) REFERENCES location(id_location) ON DELETE CASCADE,
+   CONSTRAINT fk_possess_image FOREIGN KEY(id_image) REFERENCES image(id_image) ON DELETE CASCADE
 );
 
 CREATE TABLE has(
    article_id INT NOT NULL,
    id_image INT NOT NULL,
    PRIMARY KEY(article_id, id_image),
-   CONSTRAINT fk_has_article FOREIGN KEY(article_id) REFERENCES Article(article_id),
-   CONSTRAINT fk_has_image FOREIGN KEY(id_image) REFERENCES image(id_image)
+   CONSTRAINT fk_has_article FOREIGN KEY(article_id) REFERENCES Article(article_id) ON DELETE CASCADE,
+   CONSTRAINT fk_has_image FOREIGN KEY(id_image) REFERENCES image(id_image) ON DELETE CASCADE
 );
