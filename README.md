@@ -27,7 +27,7 @@ https://epinaturefr.vercel.app/
 ## Roadmap
 
 - **Front-End:**
-  - [ ] Page Présentation EpiNature avec caroussel des membres de l'EpiNature en js.
+  - [x] Page Présentation EpiNature avec caroussel des membres de l'EpiNature en js.
   - [ ] Page Boutique.
   - [ ] Page Produit.
   - [ ] Page Blog.
@@ -43,28 +43,6 @@ https://epinaturefr.vercel.app/
 
 ## FAQ
 
-#### Question 1
-
-Answer 1
-
-#### Question 2
-
-Answer 2
-
-
-## 🚀 About Me
-I'm a full stack developer...
-
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
-
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
