@@ -1,0 +1,208 @@
+#presentation{
+    width: 900px;
+    padding: 40px 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    /* .responsive {
+        width: 100%;
+        max-width: 472px;
+        height: auto;
+    } */
+    
+    h1{
+        margin: 30px 0px;
+        text-align: center;
+        color: var(--blackEarth);
+        font-size: var(--width-Title1);
+    }
+
+    h2{
+        margin: 30px 0px;
+        text-align: center;
+        color: var(--blackEarth);
+        font-size: var(--width-Title2);
+    }
+
+
+
+    
+    /* hr{
+        display: flex;
+        align-self: center;
+        width: 90%;
+        margin: 20px 0px;
+        height: 3px;
+        border: none;
+        color: var(--darkBrick);
+        background-color: var(--darkBrick);
+        } */
+    
+    .boxText{
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        background-color: rgba(186, 62, 37, 0.5);
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: var(--width-Text);
+        font-family: Roboto;
+
+        h3{
+            font-family: Pangolin;
+            font-size: var(--width-Title3);
+            margin: 10px 0px;
+        }
+
+        p{
+            font-size: var(--width-Text);
+            margin: 6px 0px;
+        }
+
+        ul{
+            margin: 10px 0px;
+            margin-left: 20px;
+        }
+
+        li{
+            margin: 6px 0px;
+            margin-left: 20px;
+        }
+    }
+
+    .slideshow{
+        h3{
+            text-align: center;
+            font-family: Pangolin;
+            font-size: var(--width-Title3);
+            margin: 10px 0px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            width: 60%;
+            height: auto;
+            max-width: 900px;
+            position: relative;
+            margin: auto;
+            
+            /* Hide the images by default */
+            .mySlides {
+                display: none;
+
+                img{
+                    border-radius: 20px;
+                    width: 100%;
+                    height: auto;
+                    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+                }
+
+                /* Caption text */
+                .memberName {
+                    color: var(--breadPasta);
+                    font-size: var(--width-Title2);
+                    background-color: rgba(186, 62, 37, 0.5);
+                    padding: 8px 10px;
+                    position: absolute;
+                    left: 10%;
+                    right: 10%;
+                    bottom: 5px;
+                    width: 80%;
+                    margin: 0px auto;
+                    text-align: center;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+        
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                background-color: rgba(186, 62, 37, 0.5);
+                color: var(--breadPasta);
+                font-weight: bold;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                font-size: var(--width-TextImportant);
+            }
+
+            /* Position the "next button" to the right */
+            .prev{
+                left: 0;
+                border-radius: 0 3px 3px 0;
+            }
+            
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(186, 62, 37, 1);
+            }
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: rgba(186, 62, 37, 0.5);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .active, .dot:hover {
+            background-color: rgba(186, 62, 37, 1);
+          }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:940px){
+    #presentation{
+        width: 95%;
+        .slideshow{
+            .slideshow-container{
+                width: 90%;
+                height: auto;
+                .mySlides{
+                    .memberName{
+                        width: 50%;
+                        font-size: var(--width-Text);
+                    }
+                }
+
+                .prev, .next{
+                    font-size: var(--width-Text);
+                    padding: 12px 14px;
+                }
+
+                .prev:hover, .next:hover {
+                    background-color: rgba(186, 62, 37, 0.5);
+                }
+            }
+        }
+    }
+}

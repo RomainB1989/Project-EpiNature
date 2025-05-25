@@ -1,0 +1,127 @@
+.account-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.account-box {
+    background-color: rgba(186, 62, 37, 0.5);
+    border-radius: 15px;
+    padding: 40px;
+    color: var(--blackEarth);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.account-box h1 {
+    font-family: var(--Pangolin);
+    font-size: var(--width-Title2);
+    margin-bottom: 20px;
+    color: var(--blackEarth);
+}
+
+.welcome-text {
+    font-family: var(--Roboto);
+    font-size: var(--width-TextImportant);
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.rewards-section {
+    margin: 40px 0;
+}
+
+.rewards-section h2 {
+    font-family: var(--Pangolin);
+    font-size: var(--width-Title3);
+    margin-bottom: 20px;
+    color: var(--blackEarth);
+}
+
+.no-rewards {
+    font-family: var(--Roboto);
+    font-size: var(--width-TextImportant);
+    color: var(--blackEarth);
+}
+
+.account-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.account-btn {
+    background-color: var(--flour);
+    border: solid 2px var(--blackEarth);
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-decoration: none;
+    color: var(--blackEarth);
+    font-family: var(--Pangolin);
+    font-size: var(--width-TextImportant);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.account-btn:hover {
+    transform: scale(1.02);
+    background-color: var(--darkBrick);
+    color: var(--flour);
+    border-color: var(--goldWheat);
+}
+
+.account-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.logout-btn {
+    display: inline-block;
+    background-color: var(--flour);
+    color: var(--blackEarth);
+    padding: 10px 30px;
+    border: solid 2px var(--blackEarth);
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: var(--Pangolin);
+    font-size: var(--width-TextImportant);
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.logout-btn:hover {
+    background-color: var(--darkBrick);
+    color: var(--flour);
+    border-color: var(--goldWheat);
+    transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media screen and (min-width:300px) and (max-width:940px){
+    .account-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .account-box {
+        padding: 20px;
+    }
+
+    .account-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .account-btn {
+        width: 80%;
+        max-width: 300px;
+    }
+} 

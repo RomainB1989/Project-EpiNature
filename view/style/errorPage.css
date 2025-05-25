@@ -1,0 +1,90 @@
+/* Import des variables de style depuis style.css */
+@import 'style.css';
+
+/* Container principal pour la page d'erreur */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--flour);
+    border-radius: 15px;
+    font-family: var(--Pangolin);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100vw;
+}
+
+/* Style du titre principal (404) */
+.error-container h1 {
+    font-size: 120px;
+    color: var(--darkBrick);
+    margin: 0;
+    font-family: var(--Pangolin);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du sous-titre */
+.error-container h2 {
+    font-size: var(--width-Title2);
+    color: var(--blackEarth);
+    margin: 20px 0;
+    font-family: var(--Pangolin);
+}
+
+/* Style du message d'erreur */
+.error-container p {
+    font-size: var(--width-TextImportant);
+    color: var(--blackEarth);
+    margin-bottom: 30px;
+    font-family: var(--Roboto);
+    line-height: 1.6;
+}
+
+/* Style du bouton de retour */
+.error-container .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--darkBrick);
+    color: var(--flour);
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: var(--width-TextImportant);
+    font-family: var(--Pangolin);
+    transition: all 0.3s ease;
+    border: 2px solid var(--blackEarth);
+}
+
+/* Effet hover sur le bouton */
+.error-container .btn:hover {
+    background-color: var(--lightBrick);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries pour la responsivité */
+@media screen and (min-width:300px) and (max-width:940px) {
+    .error-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .error-container h1 {
+        font-size: 80px;
+    }
+
+    .error-container h2 {
+        font-size: var(--width-Title3);
+    }
+
+    .error-container p {
+        font-size: var(--width-Text);
+    }
+
+    .error-container .btn {
+        padding: 10px 25px;
+        font-size: var(--width-Text);
+    }
+} 

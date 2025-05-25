@@ -1,0 +1,78 @@
+#ouNousTrouver{
+    padding: 40px 0px;
+    
+    article{
+        width: 900px;
+        padding: 20px 30px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        font-size: var(--width-Text);
+        background-color: rgba(186, 62, 37, 0.5);
+        color: var(--blackEarth);
+        border-radius: 10px;
+    }
+
+    .boxText, .boxContent{
+        font-family: Roboto;
+        text-align: left;
+    
+        h3{
+            text-align: center;
+            font-family: Pangolin;
+            font-size: var(--width-Title3);
+            margin: 30px 0px;
+        }
+    
+        .important{
+            font-size: var(--width-TextImportant);
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        p, li{
+            text-align: left;
+            margin: 10px 0px;
+        }
+    
+        li{
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        a{
+            color: var(--blackEarth);
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: var(--goldWheat);
+        }
+
+        iframe{
+            width: 90%;
+            height: 600px;
+            margin: 20px auto;
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:940px){
+    #ouNousTrouver{
+        width: 95%;
+        padding: 20px 0px;
+
+        article{
+            width: 90%;
+            padding: 20px 10px;
+        }
+
+        .boxContent{
+            iframe{
+                width: 96%;
+                height: 400px;
+            }
+        }
+    }
+}
