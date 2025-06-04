@@ -41,7 +41,7 @@
 
 }
 
-@media screen and (min-width:300px) and (max-width:920px){
+@media screen and (min-width:300px) and (max-width:900px){
     #cguv{
         width: 80%;
         margin: 20px auto;

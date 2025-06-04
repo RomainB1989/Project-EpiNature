@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (min-width:300px) and (max-width:940px){
+@media screen and (min-width:300px) and (max-width:900px){
     #ouNousTrouver{
         width: 95%;
         padding: 20px 0px;

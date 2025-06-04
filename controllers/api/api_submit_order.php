@@ -41,8 +41,8 @@ $data = json_decode($json);
 
 //1) Vérifier les variables null ou les champs vides
 if(!isset($data->basket) || !isset($data->locationId) || !isset($data->repetition) 
-|| !isset($data->totalAmmount) || !isset($data->userId) || empty($data->basket)) {
-    //Revoie un message d'erreur
+|| !isset($data->totalAmmount) || !isset($data->userId) 
+|| empty($data->basket) || $data->userId != $_SESSION['id_user']) {
     http_response_code(400);
     $response = ["message" => "Données manquantes.", "code" => 400];
     echo json_encode($response);

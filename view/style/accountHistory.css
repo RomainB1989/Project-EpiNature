@@ -166,7 +166,7 @@
 }
 
 /* Responsive Design */
-@media screen and (min-width:300px) and (max-width:940px){
+@media screen and (min-width:300px) and (max-width:900px){
     #accountHistory{
         width: 95%;
         ul.orders-list {

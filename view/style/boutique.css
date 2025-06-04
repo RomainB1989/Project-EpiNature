@@ -154,7 +154,7 @@
     }
 }
 
-@media screen and (min-width:600px) and (max-width:940px){
+@media screen and (min-width:600px) and (max-width:900px){
     .products-grid {
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 1.5rem;

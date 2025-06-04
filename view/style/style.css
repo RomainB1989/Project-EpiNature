@@ -13,7 +13,7 @@
     --width-Title1: 60px;
     --width-Title2: 40px;
     --width-Title3: 24px;
-    --width-Menu: 17px;
+    --width-Menu: 24px;
     --width-TextImportant: 20px;
     --width-TextImportant2: 17px;
     --width-Text: 15px;
@@ -482,13 +482,12 @@ footer{
 }
 
 
-/* Responsive Design  A partir de (min-width=920px) */
-@media screen and (min-width:300px) and (max-width:940px){
+@media screen and (min-width:300px) and (max-width:900px){
     :root{
         --width-Title1: 44px;
         --width-Title2: 32px;
         --width-Title3: 20px;
-        --width-Menu: 15px;
+        --width-Menu: 17px;
         --width-TextImportant: 17px;
         --width-TextImportant2: 16px;
         --width-Text: 14px;

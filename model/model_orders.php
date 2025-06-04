@@ -3,16 +3,20 @@
 function addOrder($bdd, $orderData){
     $dateOrder = date('Y-m-d H:i:s'); // Date et heure actuelles au format DATETIME MySQL
     $order_state = "en cours";
-
+    $totalAmmount = filter_var($orderData->totalAmmount, FILTER_VALIDATE_FLOAT);
+    $repetition = filter_var($orderData->repetition, FILTER_VALIDATE_INT);
+    $locationId = filter_var($orderData->locationId, FILTER_VALIDATE_INT);
+    $userId = filter_var($orderData->userId, FILTER_VALIDATE_INT);
+    
     try{
         // 1. Ajout de la Commande
         $req = $bdd->prepare('INSERT INTO orders (order_date, total_ammount, order_nb_weeks, order_state, id_location, user_id) VALUES (?,?,?,?,?,?)');
         $req->bindParam(1,$dateOrder,PDO::PARAM_STR);
-        $req->bindParam(2,$orderData->totalAmmount,PDO::PARAM_STR);
-        $req->bindParam(3,$orderData->repetition,PDO::PARAM_INT);
+        $req->bindParam(2,$totalAmmount,PDO::PARAM_STR);
+        $req->bindParam(3,$repetition,PDO::PARAM_INT);
         $req->bindParam(4,$order_state,PDO::PARAM_STR);
-        $req->bindParam(5,$orderData->locationId,PDO::PARAM_INT);
-        $req->bindParam(6,$orderData->userId,PDO::PARAM_INT);
+        $req->bindParam(5,$locationId,PDO::PARAM_INT);
+        $req->bindParam(6,$userId,PDO::PARAM_INT);
         $req->execute();
 
         // 2. Récupération de l'order_id généré
@@ -24,7 +28,7 @@ function addOrder($bdd, $orderData){
         // 3. Ajout des produits dans la table d'association "contain"
         $reqContain = $bdd->prepare('INSERT INTO contain (product_id, order_id, order_quantity) VALUES (?, ?, ?)');
         foreach ($orderData->basket as $item) {
-            $product_id = (int)$item->id_product;
+            $product_id = (int)sanitize($item->id_product);
             $quantity = (int)sanitize($item->quantity);
             $reqContain->bindValue(1, $product_id, PDO::PARAM_INT);
             $reqContain->bindValue(2, $order_id, PDO::PARAM_INT);

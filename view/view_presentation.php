@@ -16,27 +16,27 @@
             <h3>Nos Membres</h3>
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="./src/Images/member/marie.jpeg">
+                    <img src="./src/Images/member/marie.jpeg" alt="Marie Membre de l'EpiNature">
                     <div class="memberName">Marie SEVENAS</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="./src/Images/member/jeremy.jpeg">
+                    <img src="./src/Images/member/jeremy.jpeg" alt="Jeremy Membre de l'EpiNature">
                     <div class="memberName">Jeremy LOUSERGUE</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="./src/Images/member/céline.jpeg">
+                    <img src="./src/Images/member/céline.jpeg" alt="Céline Membre de l'EpiNature">
                     <div class="memberName">Céline MELARD</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="./src/Images/member/pauline.jpeg">
+                    <img src="./src/Images/member/pauline.jpeg" alt="Pauline Membre de l'EpiNature">
                     <div class="memberName">Pauline MAGOUX</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="./src/Images/member/bernard.jpeg">
+                    <img src="./src/Images/member/bernard.jpeg" alt="Bernard Membre de l'EpiNature">
                     <div class="memberName">Bernard CHAMBLOIS</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="./src/Images/member/dorian.jpeg">
+                    <img src="./src/Images/member/dorian.jpeg" alt="Dorian Membre de l'EpiNature">
                     <div class="memberName">Dorian BOULAIN</div>
                 </div>
                 <!-- Bouttons Précèdent et Suivant-->
