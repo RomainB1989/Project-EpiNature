@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /adrar/Epinature/
+
+# Bloquer l'accès au fichier .env
+<FilesMatch "^\.env$">
+    Require all denied
+</FilesMatch>
+
+# Si le fichier ou dossier existe, le servir directement
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Sinon, rediriger vers index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
