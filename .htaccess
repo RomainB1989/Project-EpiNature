@@ -6,6 +6,11 @@ RewriteBase /adrar/Epinature/
     Require all denied
 </FilesMatch>
 
+# Bloquer l'accès au fichier .env.example
+<FilesMatch "^\.env\.example$">
+    Require all denied
+</FilesMatch>
+
 # Si le fichier ou dossier existe, le servir directement
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
